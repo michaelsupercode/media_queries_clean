@@ -1,0 +1,57 @@
+@media only screen and (min-width: 768px) {
+
+/* Bigger Font-Size */
+
+html {
+    font-size: 18px;
+}
+
+/* Background-images attached to the background. Height set to 80vh. */
+
+.services, .free__qoute, .contact {
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+    /* Section 2 with 6 images, each with a button in the center of the image  */
+
+.picture__section {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; 
+    margin-bottom: 6.25rem;
+    height: auto;
+}
+
+.picture__section div {
+    background-color: transparent;
+    width: 30%;
+}
+
+.picture__section button {
+    opacity: 0;
+}
+
+/* Section 5: examples with flex. Examples consisting of an image, h2, date, description and a link for more information */
+
+.examples {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.examples article {
+    width: 30%;
+}
+
+.examples img {
+    width: 100%;
+    height: max-content;
+}
+
+}

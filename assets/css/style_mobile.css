@@ -1,0 +1,505 @@
+/* Global Styling */
+
+@font-face {
+    font-family: 'Alegreya-Regular';
+    src: url('../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf');
+    font-family: 'Alegreya-Bold';
+    src: url('../fonts/Alegreya_SC/AlegreyaSC-Bold.ttf');
+    font-family: 'Nixie-Regular';
+    src: url('../fonts/NixieOne-Regular.ttf');
+    font-family: 'Alegreya-Sans-Medium';
+    src: url('../fonts/Alegreya_Sans/AlegreyaSans-Medium.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --white-color: white;
+    --font-color-green: rgba(58, 79, 82, 1);
+    --font-color-gray: rgba(106, 106, 106, 1);
+    --button-color: rgba(58, 79, 82, 1);
+    --image-color: rgba(2, 56, 58, 0.7);
+    --image-color-black: rgba(0, 0, 0, 0.2);
+    --small-button-color: rgba(77, 167, 202, 1);
+    --footer-background: rgba(43, 62, 81, 1);
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2.25rem;
+    --font-size-h3: 2rem;
+    --font-size-p-header: 1rem;
+    --font-size-p: 0.875rem;
+    --font-size-button: 0.875rem;
+    --font-size-p-quote: 2.25rem;
+    --font-size-button-quote: 1rem;
+    --font-size-form: 0.875rem;
+    --line-hight-p: 1.5rem;
+    --font-family-p: Helvetica, sans-serif;
+    --font-family-h2: 'Alegreya-Sans-Medium';
+}
+
+html {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+
+/* Styling of body with Flex */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Black transparent background on section (services, free__quote and contact) */
+
+.black__transparent__bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.354);
+    padding: 0.31rem 2rem;
+    text-align: center;
+} 
+
+/* All paragraphs with grey color */
+
+.paragraph__grey {
+    font-size: var(--font-size-p);
+    font-family: var(--font-family-p);
+    line-height: var(--line-hight-p);
+    color: var(--font-color-gray);
+    margin-bottom: 1.25rem;
+}
+
+/* All paragraphs with white color */
+
+.paragraph__white {
+    font-size: var(--font-size-p);
+    font-family: var(--font-family-p);
+}
+
+/* Styling Header with background image */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100svh;
+    padding: 1.25rem 1.88rem;
+    background-image: url('../img/0f6f55ffff18a259b1383b2fd9d785aa.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 6.2rem;
+}
+
+/* Header with Flex and width: 100% of the body */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Styling of logo */
+
+.logo {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-family: 'Alegreya-Regular';
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Styling of burger-menu */
+
+.burger__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger {
+    height: 0.13rem;
+    width: 1.5rem;
+    background-color: var(--white-color);
+    margin: 0.13rem;
+    border-radius: 0.3rem;
+}
+
+/* Styling of Landingpage head with h1 and description p */
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    color: var(--white-color);
+}
+
+.landing-page h1 {
+    font-family: 'Nixie-Regular';
+    font-size: var(--font-size-h1);
+    font-weight: 400;
+}
+
+.landing-page p {
+    font-family: 'Alegreya-Regular';
+    font-size: var(--font-size-p-header);
+    font-weight: 400;
+}
+
+/* Main-part */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.padding__lr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.25rem 1.88rem;
+}
+
+/* Section 1 and 4 with portfolio and button to view all */
+
+.portfolio {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.25rem 0 3.1rem 0;
+    position: relative;
+}
+
+.portfolio div h2 {
+    font-family: var(--font-family-h2);
+    color: var(--font-color-green);
+    font-size: var(--font-size-h2);
+    font-weight: 100;
+    margin-bottom: 1.25rem;
+}
+
+.portfolio div p {
+    font-size: var(--font-size-p);
+    color: var(--font-color-gray);
+    font-family: var(--font-family-p);
+}
+
+.portfolio a button {
+    background-color: transparent;
+    padding: 0.63rem 0.94rem;
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 27%;
+}
+
+/* Section 2 with 6 images, each with a button in the center of the image  */
+
+.picture__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    width: 100%;
+    margin-bottom: 6.25rem;
+}
+
+.picture__section div {
+    background-color: var(--image-color);
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.picture__section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.picture__section button {
+    padding: 0.44rem 0.63rem;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Service section (3) with background image and icons with description on top */
+
+.services {
+    width: 100%;
+    background-image: url('../img/8d72e0af708f1d83a868ba81ee657811.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white-color);
+}
+
+.services__headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.88rem;
+}
+
+.services__headline h2, .contact h2 {
+    font-family: var(--font-family-h2);
+    font-size: var(--font-size-h2);
+    font-weight: 300;
+    margin-bottom: 0.25rem;
+}
+
+.services__content img {
+    width: 40px;
+    height: 40px;
+}
+
+.services__content {
+    margin-bottom: 1.25rem;
+}
+
+.services__content h3 {
+    font-family: var(--font-family-h3);
+    font-size: var(--font-size-h3);
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+}
+
+.services__content p, .contact p {
+    font-size: var(--font-size-p);
+    font-family: var(--font-family-p);
+    line-height: 1.5rem;
+}
+
+/* Section 5: examples with flex. Examples consisting of an image, h2, date, description and a link for more information */
+
+.examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 6.25rem;
+}
+
+.examples img {
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+    margin-top: 3.13rem;
+}
+
+.examples h3 {
+    font-family: var(--font-family-h3);
+    font-size: var(--font-size-h3);
+    color: var(--font-color-green);
+    font-weight: 100;
+    margin: 1.25rem 0;
+}
+
+.date {
+    font-style: italic;
+}
+
+.examples article a {
+    color: var(--small-button-color);
+}
+
+/* Section 6: Free quotes with background image, a description and a free quote button */
+
+.free__qoute {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-image: url('../img/6f4d0914c7b5ddb743f600df2edc50bf.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.free__qoute__bg {
+    padding: 1.37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.13rem;
+}
+
+.free__qoute__bg p {
+    color: var(--white-color);
+    font-size: 2.25rem;
+    font-family: 'Alegreya-Sans-Medium';
+}
+
+.free__qoute__bg button {
+    padding: 0.63rem 0.94rem;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+/* Section 7: Testimonials with flex */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+    gap: 2.19rem;
+}
+
+.testimonials h2 {
+    margin-bottom: -1.25rem;
+    font-family: var(--font-family-h2);
+    font-size: var(--font-size-h2);
+    color: var(--font-color-green);
+}
+
+.testimonials__personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.testimonials__comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 3rem 3rem 3rem;
+}
+
+.testimonials__comments img {
+    margin-bottom: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 0.88rem;
+    margin-bottom: 0;
+}
+
+/* Contact Form with name and email required, a textarea and a submit button*/
+
+form {
+    padding-bottom: 2.5rem;
+}
+
+.contact {
+    background-image: url('../img/contact.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact h2, .contact p {
+    color: var(--white-color);
+}
+
+.contact__name__mail, .contact__text {
+    width: 97%;
+    margin-top: 1.25rem;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    border-radius: 0.3rem;
+}
+
+.contact__name__mail {
+    height: 2.13rem;
+}
+
+.contact__text {
+    height: 3.38rem;
+}
+
+::placeholder {
+    color: var(--white-color);
+    padding-left: 0.63rem;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.88rem;
+}
+
+textarea::placeholder {
+    padding-top: 0.3rem;
+}
+
+.input__button {
+    margin-top: 1.25rem;
+    padding: 0.63rem 0.94rem;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.88rem;
+}
+
+/* Footer with Backgroundcolor of var:footer */
+
+footer {
+    width: 100%;
+    height: 160px;
+    background-color: var(--footer-background);
+}
+
+footer p {
+    color: var(--white-color);
+    font-family: var(--font-family-p);
+    font-weight: 100;
+    font-size: 0.88rem;
+    margin: 2.5rem 0 0 1.25rem;
+    width: 35%;
+}
